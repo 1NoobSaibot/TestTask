@@ -1,4 +1,5 @@
 import { Outlet } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function MainLayout() {
 	return <div>
@@ -10,10 +11,21 @@ export default function MainLayout() {
 
 
 function Header() {
-	return <div>Header</div>
+	return <div>
+		Header
+		<Link to="/sign-in">
+			Sign In
+		</Link>
+		<Link to="/sign-up">
+			Sign Up
+		</Link>
+	</div>
 }
 
 
 function Footer() {
-	return <div>Footer</div>
+	return <div>
+		Footer
+		
+	</div>
 }
